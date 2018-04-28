@@ -18,9 +18,12 @@
 		8A6C2E691FAD4DAC008EB058 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A6C2E5F1FAD3EAC008EB058 /* Settings.swift */; };
 		8A6C2E6A1FAD4DAF008EB058 /* SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A6C2E601FAD3EAC008EB058 /* SettingsTableViewController.swift */; };
 		8A6C2E6B1FAD4DB3008EB058 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A6C2E611FAD3EAC008EB058 /* Utils.swift */; };
+		F089E126769FC314E22BD022 /* libPods-TwilioVideo-AudioSinkExample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AEFFD961B8A2BC029180E76A /* libPods-TwilioVideo-AudioSinkExample.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		55581DBE6591A253A7BDDA57 /* Pods-TwilioVideo-AudioSinkExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TwilioVideo-AudioSinkExample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TwilioVideo-AudioSinkExample/Pods-TwilioVideo-AudioSinkExample.debug.xcconfig"; sourceTree = "<group>"; };
+		6E9916CCF8D90AEE9276A7E7 /* Pods-TwilioVideo-AudioSinkExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TwilioVideo-AudioSinkExample.release.xcconfig"; path = "Pods/Target Support Files/Pods-TwilioVideo-AudioSinkExample/Pods-TwilioVideo-AudioSinkExample.release.xcconfig"; sourceTree = "<group>"; };
 		8A6598E41FB13ED6005A8849 /* RecordingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordingsViewController.swift; sourceTree = "<group>"; };
 		8A6C2E481FAD3AD2008EB058 /* AudioSinkExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AudioSinkExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A6C2E4B1FAD3AD2008EB058 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -37,6 +40,7 @@
 		8A6C2E651FAD48DB008EB058 /* ExampleSpeechRecognizer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ExampleSpeechRecognizer.h; sourceTree = "<group>"; };
 		8A6C2E661FAD48DB008EB058 /* ExampleSpeechRecognizer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ExampleSpeechRecognizer.m; sourceTree = "<group>"; };
 		8A7FE3B51FAD6409003A4C41 /* AudioSinks-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AudioSinks-Bridging-Header.h"; sourceTree = "<group>"; };
+		AEFFD961B8A2BC029180E76A /* libPods-TwilioVideo-AudioSinkExample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TwilioVideo-AudioSinkExample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,18 +48,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F089E126769FC314E22BD022 /* libPods-TwilioVideo-AudioSinkExample.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		25CBB41AAC6AE66F5C504C08 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				55581DBE6591A253A7BDDA57 /* Pods-TwilioVideo-AudioSinkExample.debug.xcconfig */,
+				6E9916CCF8D90AEE9276A7E7 /* Pods-TwilioVideo-AudioSinkExample.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		8A6C2E3F1FAD3AD2008EB058 = {
 			isa = PBXGroup;
 			children = (
 				8A6C2E4A1FAD3AD2008EB058 /* AudioSinkExample */,
 				8A6C2E5E1FAD3EAC008EB058 /* Utils */,
 				8A6C2E491FAD3AD2008EB058 /* Products */,
+				25CBB41AAC6AE66F5C504C08 /* Pods */,
+				DB168AB9AF428A220D57998F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -104,6 +120,14 @@
 			path = AudioSinks;
 			sourceTree = "<group>";
 		};
+		DB168AB9AF428A220D57998F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AEFFD961B8A2BC029180E76A /* libPods-TwilioVideo-AudioSinkExample.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -111,9 +135,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8A6C2E5A1FAD3AD2008EB058 /* Build configuration list for PBXNativeTarget "AudioSinkExample" */;
 			buildPhases = (
+				2D3E0E20CED5B0584CF838D1 /* [CP] Check Pods Manifest.lock */,
 				8A6C2E441FAD3AD2008EB058 /* Sources */,
 				8A6C2E451FAD3AD2008EB058 /* Frameworks */,
 				8A6C2E461FAD3AD2008EB058 /* Resources */,
+				5CEA41672C3C2099ED3F0E68 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -170,6 +196,45 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2D3E0E20CED5B0584CF838D1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TwilioVideo-AudioSinkExample-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5CEA41672C3C2099ED3F0E68 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-TwilioVideo-AudioSinkExample/Pods-TwilioVideo-AudioSinkExample-frameworks.sh",
+				"${PODS_ROOT}/TwilioVideo/Build/iOS/TwilioVideo.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TwilioVideo.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TwilioVideo-AudioSinkExample/Pods-TwilioVideo-AudioSinkExample-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		8A6C2E441FAD3AD2008EB058 /* Sources */ = {
@@ -318,6 +383,7 @@
 		};
 		8A6C2E5B1FAD3AD2008EB058 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 55581DBE6591A253A7BDDA57 /* Pods-TwilioVideo-AudioSinkExample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -334,6 +400,7 @@
 		};
 		8A6C2E5C1FAD3AD2008EB058 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6E9916CCF8D90AEE9276A7E7 /* Pods-TwilioVideo-AudioSinkExample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
